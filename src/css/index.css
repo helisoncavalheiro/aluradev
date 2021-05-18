@@ -22,6 +22,13 @@ body{
 	margin: 0px;
 	border: 0px;
 	padding: 0px;
+
+	font-family: Inter;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 24px;
+	color: #666666
 }
 
 .container{
@@ -79,27 +86,62 @@ body{
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 24px;
-	color: var(--white);
 
 	/*Evita que o padding adicione largura no elemento*/
 	box-sizing: border-box;
 }
 
-.search-bar::placeholder{
-	color: var(--white);
-}
-
-.menu-icon{
+.icon{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 6.82%;
-	height: 85.71%;
+	width: 48px;
+	height: 48px;
 	color: var(--white);
+}
+
+.icon svg{
+	font-size: 20px;
+}
+
+.search-icon{
+	display: none;
+}
+
+.toolbar{
+	display: flex;
+	justify-content: space-between;
 }
 
 @media screen and (min-width: 768px) {
 	.container{
 		top: 32px;
+	}
+
+	.icon{
+		width: 17.5px;
+		height: 20px;
+	}
+}
+
+@media screen and (max-width:  768px ) {
+	.search-icon{
+		display: flex;
+	}
+
+	.search-bar{
+		display: none;
+	}
+
+	.search{
+		display: flex;
+		justify-content: right;
+		width: auto;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.menu-icon{
+		display: none;
 	}
 }
