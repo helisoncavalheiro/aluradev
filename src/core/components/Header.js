@@ -2,11 +2,11 @@ import logo from '../../assets/img/logo.png';
 
 const Header = ()=>{
 	return (
-		<div className="container">
-			<div className="header">
+		<header className="header">
+			<div className="container">
 				<img src={logo} className="img-responsive" alt="Logo"></img>
 			</div>
-		</div>
+		</header>
 	)
 }
 
