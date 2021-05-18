@@ -43,22 +43,17 @@ body{
 }
 
 .header{
-	position: relative;
 	height: 56px;
 	width: 100%;
 	margin: 0 auto;
 	
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-between;
 }
 
 .logo{
-	width: 20.6%;
-}
-
-.container .header {
-	justify-content: space-between;
+	width: 145px;
 }
 
 .img-responsive{
@@ -66,7 +61,7 @@ body{
 }
 
 .search{
-	width: 61.22%;
+	width: 54.65%;
 	height: 100%;
 }
 
@@ -117,9 +112,9 @@ body{
 
 .profile{
 	display: none;
-	justify-content: space-between;
+	justify-content: flex-end;
 	align-items: center;
-	width: 7.36%;
+	width: 106px;
 }
 
 .profile-image{
@@ -127,6 +122,7 @@ body{
 	width: 32px; 
 	height: 32px; 
 	object-fit: cover;
+	margin-right: 8px;
 }
 
 .profile-name{
