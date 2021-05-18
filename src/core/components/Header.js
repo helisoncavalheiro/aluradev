@@ -2,6 +2,7 @@ import logo from "../../assets/img/logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch, faBars } from "@fortawesome/free-solid-svg-icons";
 import profile from '../../assets/img/profile.jpg';
+import header from '../../css/header.css';
 
 const Header = () => {
   return (
