@@ -2,6 +2,7 @@ import logo from "../../assets/img/logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch, faBars } from "@fortawesome/free-solid-svg-icons";
 import profile from '../../assets/img/profile.jpg';
+import header from '../../css/header.css';
 
 const Header = () => {
   return (
@@ -15,10 +16,10 @@ const Header = () => {
         </div>
 
         <div className="toolbar">
-          <div className="icon search-icon">
+          <div className="toolbar-icon search-icon">
             <FontAwesomeIcon icon={faSearch} />
           </div>
-          <div className="icon menu-icon">
+          <div className="toolbar-icon menu-icon">
             <FontAwesomeIcon icon={faBars} size="lg" />
           </div>
         </div>
