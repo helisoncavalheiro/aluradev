@@ -1,6 +1,7 @@
 :root{
 	/*Neutral*/
 	--dark-gray: #141414;
+	--grey: #ffffff29;
 	--white: #FFFFFF;
 
 	/*MAC*/
@@ -18,30 +19,87 @@
 
 body{
 	background-color: var(--dark-blue);
-}
-
-.header{
-	height: 56px;
-	padding: 16px;
+	margin: 0px;
+	border: 0px;
+	padding: 0px;
 }
 
 .container{
-	width: 100%;
-	height: 100%;
+	display: flex;
+	align-items: center;
+
+	position: relative;
+	width: 91.46%;
+	margin: 0 auto;
+	height: auto;
+	top: 16px;
 }
 
-.header .container{
+.header{
+	position: relative;
+	height: 56px;
+	width: 100%;
+	margin: 0 auto;
+	
 	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.logo{
+	width: 20.6%;
+}
+
+.container .header {
 	justify-content: space-between;
 }
 
 .img-responsive{
 	position: relative;
+}
+
+.search{
+	width: 61.22%;
 	height: 100%;
 }
 
+.search-bar{
+
+	width: 100%;
+	height: 100%;
+
+	margin: 0px;
+	border: 0px;
+	padding: 0px 14px;
+
+	background-color: var(--grey);
+
+	border-radius: 8px;
+
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	color: var(--white);
+
+	/*Evita que o padding adicione largura no elemento*/
+	box-sizing: border-box;
+}
+
+.search-bar::placeholder{
+	color: var(--white);
+}
+
+.menu-icon{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 6.82%;
+	height: 85.71%;
+	color: var(--white);
+}
+
 @media screen and (min-width: 768px) {
-	.header{
-		padding: 32px;
+	.container{
+		top: 32px;
 	}
 }
