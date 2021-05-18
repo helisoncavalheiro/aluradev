@@ -21,11 +21,12 @@ const Header = () => {
           <div className="icon menu-icon">
             <FontAwesomeIcon icon={faBars} size="lg" />
           </div>
-          <div className="profile">
-            <img className="profile-image img-responsive"/>
+        </div>
+
+        <div className="profile">
+            <img src={profile} className="profile-image img-responsive"/>
             <span className="profile-name">Harry</span>
           </div>
-        </div>
       </header>
     </div>
   );

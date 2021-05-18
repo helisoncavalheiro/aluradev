@@ -113,6 +113,24 @@ body{
 	justify-content: space-between;
 }
 
+.profile{
+	display: none;
+	justify-content: space-between;
+	align-items: center;
+	width: 7.36%;
+}
+
+.profile-image{
+	border-radius: 50%;
+	width: 32px; 
+	height: 32px; 
+	object-fit: cover;
+}
+
+.profile-name{
+	color: var(--white);
+}
+
 @media screen and (min-width: 768px) {
 	.container{
 		top: 32px;
@@ -143,5 +161,9 @@ body{
 @media screen and (min-width: 992px) {
 	.menu-icon{
 		display: none;
+	}
+
+	.profile{
+		display: flex;
 	}
 }
