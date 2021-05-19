@@ -1,0 +1,32 @@
+.nav{
+  list-style-type: none;
+  padding: 0px;
+}
+
+.nav-item{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.nav-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  border-radius: 16px;
+  height: 48px;
+  width: 48px;
+  margin-right: 16px;
+
+  background-color: rgba(80, 129, 251, 0.16);
+}
+
+.active{
+  color: var(--white);
+}
+
+.active .nav-icon{
+  background-color: var(--blue-300);
+}
