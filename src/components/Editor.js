@@ -18,12 +18,16 @@ const unfold = (f, seed) => {
   return (
     <div className="editor editor-green">
       <div className="editor-wraper">
-        <MacNav />
-        <textarea
-          className="editor-content"
-          value={content}
-          onChange={(evt) => setContent(evt.target.value)}
-        />
+        <div className="editor-header">
+          <MacNav />
+        </div>
+        <div className="editor-body">
+          <textarea
+            className="editor-content"
+            value={content}
+            onChange={(evt) => setContent(evt.target.value)}
+          />
+        </div>
       </div>
     </div>
   );
