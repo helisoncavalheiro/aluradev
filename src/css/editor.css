@@ -1,0 +1,56 @@
+.editor {
+  width: 100%;
+  height: 492px;
+  border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 32px;
+  box-sizing: border-box;
+}
+
+.editor .editor-wraper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-around;
+
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: 0px 16px;
+
+  background-color: var(--dark-gray);
+  border-radius: 8px;
+}
+
+.editor .editor-content {
+  text-decoration: none;
+  border: 0px;
+  resize: none;
+  height: 360px;
+  width: 100%;
+  background-color: transparent;
+  color: var(--white);
+
+  font-family: Roboto Mono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.editor-blue {
+  background-color: var(--blue);
+}
+
+.editor-purple {
+  background-color: var(--purple);
+}
+
+.editor-green {
+  background-color: var(--green);
+}
