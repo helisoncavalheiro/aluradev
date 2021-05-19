@@ -1,21 +1,4 @@
-:root{
-	/*Neutral*/
-	--dark-gray: #141414;
-	--grey: #ffffff29;
-	--white: #FFFFFF;
-
-	/*MAC*/
-	--mac-green: #27C93F;
-	--mac-red: #FF5F56;
-	--mac-yellow: #FFBD2E;
-
-	/*Blue*/
-
-	--dark-blue: #051D3B;
-	--blue-300: #5081FB;
-	--blue-200: #7BA4FC;
-	--blue-100: #96B9FD;
-}
+@import url('variables.css');
 
 body{
 	background-color: var(--dark-blue);
@@ -51,8 +34,64 @@ body{
 	font-weight: normal;
 }
 
+.box{
+	width: fit-content;
+	box-sizing: border-box;
+}
+
+@media screen and (min-width: 320px){
+	.box-sm-25{
+		width: 25%;
+	}
+	
+	.box-sm-50{
+		width: 50%;
+	}
+	
+	.box-sm-75{
+		width: 75%;
+	}
+	.box-sm-100{
+		width: 100%;
+	}
+}
+
 @media screen and (min-width: 768px) {
 	.container{
 		padding: 32px 32px 0px 32px;
+	}
+
+	.box-md-25{
+		width: 25%;
+	}
+	
+	.box-md-50{
+		width: 50%;
+	}
+	
+	.box-md-75{
+		width: 75%;
+	}
+
+	.box-md-100{
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 922px){
+	.box-lg-25{
+		width: 25%;
+	}
+	
+	.box-lg-50{
+		width: 50%;
+	}
+	
+	.box-lg-75{
+		width: 75%;
+	}
+
+	.box-md-100{
+		width: 100%;
 	}
 }
