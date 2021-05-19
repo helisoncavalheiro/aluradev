@@ -1,0 +1,25 @@
+.mac-nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 52px;
+	height: 12px;
+}
+
+.mac-nav .dot{
+	height: 12px;
+	width: 12px;
+	border-radius: 50% ;
+}
+
+.mac-nav .dot:nth-child(1){
+	background-color: var(--mac-red);
+}
+
+.mac-nav .dot:nth-child(2){
+	background-color: var(--mac-yellow);
+}
+
+.mac-nav .dot:nth-child(3){
+	background-color: var(--mac-green);
+}
