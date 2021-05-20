@@ -6,7 +6,7 @@ import header from "../css/header.css";
 
 const Header = () => {
   return (
-    <header className="header">
+    <div className="container">
       <div className="logo">
         <img src={logo} className="img-responsive" alt="Logo"></img>
       </div>
@@ -22,12 +22,11 @@ const Header = () => {
           <FontAwesomeIcon icon={faBars} size="lg" />
         </div>
       </div>
-
       <div className="profile">
         <img src={profile} className="profile-image img-responsive" />
         <span className="profile-name">Harry</span>
       </div>
-    </header>
+    </div>
   );
 };
 

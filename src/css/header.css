@@ -1,15 +1,16 @@
 .header{
+	position: relative;
 	height: 56px;
-	width: 100%;
-	margin: 0 16px;
-	
-	display: flex;
+	padding: 16px;
+}
+
+.header .container{
 	align-items: center;
 	justify-content: space-between;
 }
 
 .logo{
-	width: 145px;
+	width: 25%;
 }
 
 .img-responsive{
@@ -62,15 +63,16 @@
 }
 
 .toolbar{
-	display: flex;
+	display: none;
 	justify-content: space-between;
+	width: 25%;
 }
 
 .profile{
 	display: none;
 	justify-content: flex-end;
 	align-items: center;
-	width: 106px;
+	width: 25%;
 }
 
 .profile-image{
@@ -92,7 +94,11 @@
 	}
 
 	.header{
-		margin: 0px 32px;
+		padding: 32px;
+	}
+
+	.toolbar{
+		justify-content: flex-end;
 	}
 }
 
@@ -110,9 +116,19 @@
 		justify-content: right;
 		width: auto;
 	}
+
+	.profile{
+		display: none;
+	}
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (max-width: 922px){
+	.toolbar{
+		display: flex;
+	}
+}
+
+@media screen and (min-width: 922px) {
 	.menu-icon{
 		display: none;
 	}
