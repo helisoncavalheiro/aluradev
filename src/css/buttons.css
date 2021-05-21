@@ -15,6 +15,7 @@
 /*Light*/
 .btn-light{
   background-color: var(--blue-300);
+  color: #051D3B;
 }
 
 .btn-light:hover{
@@ -33,6 +34,7 @@
 
 .btn-dark:hover{
   background-color: rgba(80, 129, 251, 0.16);
+  cursor: pointer;
 }
 
 .btn-dark:active{

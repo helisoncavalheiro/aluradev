@@ -11,19 +11,16 @@ body{
 	color: #666666
 }
 
-.main{
-	width: 100%;
-	padding: 0px 32px;
-	box-sizing: border-box;
-}
-
 .container{
 	display: flex;
 	position: relative;
 	width: 100%;
-	height: auto;
+	height: inherit;
 	box-sizing: border-box;
-	padding: 16px 0px;
+}
+
+.row{
+	padding-top: 32px;
 }
 
 .title{
@@ -38,68 +35,111 @@ body{
 	font-weight: normal;
 }
 
-.box{
-	width: fit-content;
-	box-sizing: border-box;
+.sidebar-title{
+	font-family: Inter;
+	font-style: normal;
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: 400;
+	letter-spacing: 0.4em;
+	text-transform: uppercase;
+	color: var(--white);
 }
+
+.main{
+	width: 100%;
+	padding: 0px 32px;
+	box-sizing: border-box;
+
+	display: grid;
+	grid-template-columns: 25% 50% 25%;
+}
+
+.main .sidebar{
+	display: none;
+}
+
 
 .full-width{
 	width: 100%;
 }
 
-@media screen and (min-width: 320px){
-	.box-sm-25{
-		width: 25%;
-	}
-	
-	.box-sm-50{
-		width: 50%;
-	}
-	
-	.box-sm-75{
-		width: 75%;
-	}
-	.box-sm-100{
-		width: 100%;
+.form-control{
+
+	width: 100%;
+	min-height: 56px;
+
+	margin: 0px 0px 16px 0px;
+	border: 0px;
+	padding: 16px 14px;
+
+	background-color: var(--grey);
+
+	border-radius: 8px;
+
+	font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+	font-size: 16px;
+	line-height: 24px;
+
+	text-decoration: none;
+  border: 0px;
+  resize: none;
+
+	color: var(--white);
+
+	/*Evita que o padding adicione largura no elemento*/
+	box-sizing: border-box;
+}
+
+.color-picker{
+	padding: 8px;
+	border: 1px solid #FFFFFF;
+	height: 40px;
+	border-radius: 8px;
+}
+
+/* select.form-control{
+	appearance: none;
+	outline: none;
+}
+
+select.form-control::after {
+  content: "";
+  width: 0.8em;
+  height: 0.5em;
+  background-color: var(--select-arrow);
+  clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+} */
+
+.form-control option{
+	background-color: var(--grey);
+}
+
+@media screen and (max-width: 922px){
+	.main{
+		grid-template-columns: 100%;
 	}
 }
 
-@media screen and (min-width: 768px) {
-	.container{
-		padding: 32px 0px;
-	}
-
-	.box-md-25{
-		width: 25%;
-	}
-	
-	.box-md-50{
+@media screen and (min-width: 375px) and (max-width: 922px){
+	select.personalizacao, input.personalizacao{
 		width: 50%;
-	}
-	
-	.box-md-75{
-		width: 75%;
-	}
-
-	.box-md-100{
-		width: 100%;
 	}
 }
 
 @media screen and (min-width: 922px){
-	.box-lg-25{
-		width: 25%;
-	}
-	
-	.box-lg-50{
-		width: 50%;
-	}
-	
-	.box-lg-75{
-		width: 75%;
+	.main .sidebar{
+		display: block;
 	}
 
-	.box-md-100{
-		width: 100%;
+	.main{
+		grid-template-columns: 25% 50% 25%;
+	}
+
+	.main .form{
+		padding-left: 40px;
+		box-sizing: border-box;
 	}
 }

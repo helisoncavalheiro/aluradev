@@ -4,6 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function Nav() {
   return (
+    <>
+    <p className="sidebar-title">Menu</p>
     <ul className="nav">
       <li className="nav-item active">
         <div className="nav-icon"><FontAwesomeIcon icon={faCode} /></div>
@@ -14,5 +16,6 @@ export default function Nav() {
         Comunidade
       </li>
     </ul>
+    </>
   );
 }

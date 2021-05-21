@@ -24,7 +24,7 @@ const Header = () => {
       </div>
       <div className="profile">
         <img src={profile} className="profile-image img-responsive" />
-        <span className="profile-name">Harry</span>
+        <span className="profile-name">Helison</span>
       </div>
     </div>
   );
