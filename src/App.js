@@ -1,6 +1,6 @@
-import "./css/index.css";
 import "./css/buttons.css";
-import "./css/form.css"
+import "./css/form.css";
+import "./css/index.css";
 import Header from "./components/Header";
 import Editor from "./components/Editor";
 import Nav from "./components/Nav";
@@ -36,22 +36,23 @@ function App() {
               <textarea className="form-control" rows="3" placeholder="Descrição do seu projeto" />
               <p className="sidebar-title" >Personalização</p>
               <div className="personalizacao">
-                <select className="form-control">
-                  <option selected disabled>Selecione</option>
-                  <option>Javascript</option>
-                  <option>Java</option>
-                  <option>PHP</option>
-                  <option>Python</option>
-                  <option>Ruby</option>
-                  <option>Go</option>
-                  <option>Delphi</option>
-                  <option>C</option>
-                  <option>C#</option>
-                  <option>Fortran</option>
-                  <option>Assembly</option>
-                </select>
+                <div className="language">
+                  <select className="form-control">
+                    <option>Javascript</option>
+                    <option>Java</option>
+                    <option>PHP</option>
+                    <option>Python</option>
+                    <option>Ruby</option>
+                    <option>Go</option>
+                    <option>Delphi</option>
+                    <option>C</option>
+                    <option>C#</option>
+                    <option>Fortran</option>
+                    <option>Assembly</option>
+                  </select>
+                </div>
 
-                <input type="color" className="form-control color-picker" />
+                <div className="color"><input type="color" className="form-control color-picker" /></div>
 
               </div>
               <button className="btn btn-light full-width" >Salvar projeto</button>

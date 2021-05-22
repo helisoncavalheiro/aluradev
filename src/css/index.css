@@ -64,15 +64,40 @@ body{
 	width: 100%;
 }
 
+@media screen and (max-width: 375px){
+	.personalizacao .form-control{
+		width: 100%;
+	}
+}
+
 @media screen and (max-width: 922px){
 	.main{
 		grid-template-columns: 100%;
 	}
 }
 
-@media screen and (min-width: 375px) and (max-width: 922px){
-	select.personalizacao, input.personalizacao{
+@media screen and (min-width: 375px){
+
+	.personalizacao{
+		display: flex;
+		align-items: flex-start;
+	}
+
+	.personalizacao .language{
+		padding-right: 16px;
+	}
+	.personalizacao .language{
+		display: inline-block;
 		width: 50%;
+		margin: 0px;
+		box-sizing: border-box;
+	}
+
+	.personalizacao .color{
+		display: inline-block;
+		margin: 0px;
+		width: 50%;
+		box-sizing: border-box;
 	}
 }
 
@@ -87,6 +112,32 @@ body{
 
 	.main .form{
 		padding-left: 40px;
+		box-sizing: border-box;
+	}
+
+	.personalizacao{
+		display: block;
+	}
+
+	.personalizacao .form-control{
+		width: 100%;
+	}
+
+	.personalizacao .language{
+		padding-right: 0px;
+	}
+
+	.personalizacao .language{
+		display: inline-block;
+		width: 100%;
+		margin: 0px;
+		box-sizing: border-box;
+	}
+
+	.personalizacao .color{
+		display: inline-block;
+		margin: 0px;
+		width: 100%;
 		box-sizing: border-box;
 	}
 }
