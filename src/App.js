@@ -1,5 +1,6 @@
 import "./css/index.css";
 import "./css/buttons.css";
+import "./css/form.css"
 import Header from "./components/Header";
 import Editor from "./components/Editor";
 import Nav from "./components/Nav";
@@ -36,6 +37,7 @@ function App() {
               <p className="sidebar-title" >Personalização</p>
               <div className="personalizacao">
                 <select className="form-control">
+                  <option selected disabled>Selecione</option>
                   <option>Javascript</option>
                   <option>Java</option>
                   <option>PHP</option>

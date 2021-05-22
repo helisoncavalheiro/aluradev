@@ -64,59 +64,6 @@ body{
 	width: 100%;
 }
 
-.form-control{
-
-	width: 100%;
-	min-height: 56px;
-
-	margin: 0px 0px 16px 0px;
-	border: 0px;
-	padding: 16px 14px;
-
-	background-color: var(--grey);
-
-	border-radius: 8px;
-
-	font-family: Inter;
-  font-style: normal;
-  font-weight: normal;
-	font-size: 16px;
-	line-height: 24px;
-
-	text-decoration: none;
-  border: 0px;
-  resize: none;
-
-	color: var(--white);
-
-	/*Evita que o padding adicione largura no elemento*/
-	box-sizing: border-box;
-}
-
-.color-picker{
-	padding: 8px;
-	border: 1px solid #FFFFFF;
-	height: 40px;
-	border-radius: 8px;
-}
-
-/* select.form-control{
-	appearance: none;
-	outline: none;
-}
-
-select.form-control::after {
-  content: "";
-  width: 0.8em;
-  height: 0.5em;
-  background-color: var(--select-arrow);
-  clip-path: polygon(100% 0%, 0 0%, 50% 100%);
-} */
-
-.form-control option{
-	background-color: var(--grey);
-}
-
 @media screen and (max-width: 922px){
 	.main{
 		grid-template-columns: 100%;
