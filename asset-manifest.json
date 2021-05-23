@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/aluradev/static/css/main.03cdba6f.chunk.css",
+    "main.js": "/aluradev/static/js/main.254ab9bb.chunk.js",
+    "main.js.map": "/aluradev/static/js/main.254ab9bb.chunk.js.map",
+    "runtime-main.js": "/aluradev/static/js/runtime-main.7ec37824.js",
+    "runtime-main.js.map": "/aluradev/static/js/runtime-main.7ec37824.js.map",
+    "static/js/2.7156ecdc.chunk.js": "/aluradev/static/js/2.7156ecdc.chunk.js",
+    "static/js/2.7156ecdc.chunk.js.map": "/aluradev/static/js/2.7156ecdc.chunk.js.map",
+    "index.html": "/aluradev/index.html",
+    "static/css/main.03cdba6f.chunk.css.map": "/aluradev/static/css/main.03cdba6f.chunk.css.map",
+    "static/js/2.7156ecdc.chunk.js.LICENSE.txt": "/aluradev/static/js/2.7156ecdc.chunk.js.LICENSE.txt",
+    "static/media/profile.03ede240.jpg": "/aluradev/static/media/profile.03ede240.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7ec37824.js",
+    "static/js/2.7156ecdc.chunk.js",
+    "static/css/main.03cdba6f.chunk.css",
+    "static/js/main.254ab9bb.chunk.js"
+  ]
+}
